@@ -18,7 +18,7 @@ function BasicTable() {
         <meta property="twitter:title" content={title} />
         <meta property="twitter:description" content={description} />
       </Helmet>
-      <PapperBlock title="Statistic Chart" icon="insert_chart" desc="" overflowX>
+      <PapperBlock title="Statistic Charts" icon="insert_chart" desc="" overflowX>
         <div>
           <CompossedLineBarArea />
         </div>
