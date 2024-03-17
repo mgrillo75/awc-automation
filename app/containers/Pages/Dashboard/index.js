@@ -4,7 +4,7 @@ import brand from 'enl-api/dummy/brand';
 import { PapperBlock } from 'enl-components';
 import CompossedLineBarArea from './CompossedLineBarArea';
 import StrippedTable from '../Table/StrippedTable';
-import { firebaseDb } from '../../firebase/firebase';
+import { firebaseDb } from '../../../firebase/firebase';
 
 function BasicTable() {
   const title = brand.name + ' - Dashboard';
