@@ -13,8 +13,15 @@ function BasicTable() {
 
   useEffect(() => {
     const salesRef = firebaseDb.ref('sales');
-    salesRef.on('value', snapshot => {
-      setSales(snapshot.val());
+    salesRef.on('value', (snapshot) => {
+      if (snapshot.exists()) {
+        console.log('New sales data:', snapshot.val()); // For debugging
+        setSales(snapshot.val());
+      } else {
+        console.log('No data available'); // For debugging
+      }
+    }, (error) => {
+      console.error('Error reading sales data:', error); // For debugging
     });
 
     // Clean up the subscription
