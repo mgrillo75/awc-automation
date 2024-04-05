@@ -21,7 +21,7 @@ function BasicTable() {
         console.log('No data available'); // For debugging
       }
     }, (error) => {
-      console.error('Error reading sales data:', error); // For debugging
+      console.error('Error reading the sales data:', error); // For debugging
     });
 
     // Clean up the subscription
